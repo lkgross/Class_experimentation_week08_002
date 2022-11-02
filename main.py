@@ -66,7 +66,7 @@ print()
 
 print(my_list)
 # Make a copy of the list.
-# Make a second list that's the same as first.
+# Make a second list that has the same as first.
 copy_of_my_list = my_list[:]
 print(copy_of_my_list)
 
@@ -111,8 +111,99 @@ emma_info[1] = 20
 print(emma_info)
 print(student_info)
 
+print()
 
+values = [value**2 for value in range(1, 11)]
+print(values)
 
+print()
 
+numbers = []
+for i in range(1, 11):
+    numbers.append(i**2)
 
+print(numbers)
+
+print()
+
+a_tuple = (5, 3, 1, 7, 0)
+print(a_tuple)
+
+print()
+
+# Lists are mutable.
+print(my_list)
+print(my_list[0])
+my_list[0] = -5
+print(my_list)
+
+print()
+
+# Strings are not mutable.
+my_string = 'hedgehog'
+print(my_string[0])
+# my_string[0] = 'v' # Error!
+print(my_string)
+
+print()
+
+# Tuples are immutable also.
+print(a_tuple)
+print(a_tuple[0])
+# a_tuple[0] = 100
+print(a_tuple)
+
+print()
+
+var = 5, 3, 1, 7, 12
+print(var)
+print(type(var))
+
+print()
+
+print(my_list)
+print(5 in my_list)
+print(-5 in my_list)
+
+print()
+
+if my_list:
+    print("There are elements in the list.")
+else:
+    print("There are no elements in the list.")
+
+print()
+
+quality_points = []
+if quality_points:
+    print("There are elements in the list.")
+else:
+    print("There are no elements in the list.")
+
+print()
+
+print(len(quality_points))
+
+print()
+
+print(my_list)
+print(5 not in my_list)
+
+print()
+
+name = input("What's your name? ")
+print(f"Hello, {name}.")
+
+print()
+
+age_string = input("How old are you? ")
+age = int(age_string)
+if age > 60:
+    print("You're old!")
+
+print()
+
+age = int(input("How old are you? "))
+if age > 40:
+    print("You're old!")
 
